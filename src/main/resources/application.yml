@@ -1,0 +1,16 @@
+server:
+  port: 9096
+
+spring:
+  application:
+    name: alten-backend-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/alten?currentSchema=public
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    hibernate:
+      ddl-auto: update
